@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+}
+nav {
+    background-color: rgb(255, 253, 253);
+    display: flex;
+    justify-content: space-between ;
+    border: 1px solid lightgrey;
+    width: 100%;
+    /* position: fixed; */
+}
+div > i {
+   padding: 20px;
+    justify-content: end;
+} 
+div > i :hover {
+    box-shadow: 1px 1px 2px rgb(45, 9, 252);
+    transform: scale(1.02);
+    transition: 0.5;
+}
+.main {
+    width: 330px;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 8px;
+    
+}
+input {
+    background-color: transparent;
+    width: 500px;
+    border: 0px;
+}
+nav >span{
+    margin-left: 20px;
+}
+h1 {
+    font-weight: lighter;
+    text-align: center;
+}
+.parent {
+   display: flex;
+   justify-content: center;
+   box-sizing: border-box;
+   margin-top: 30px;
+   gap: 20px;
+
+}
+.class {
+    /* border: 1px solid lightgrey; */
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+.class :hover {
+    box-shadow: 1px 1px 2px lightgrey;
+    transform: scale(1.02);
+    transition: 0.5;
+}
+.class > span{
+    margin-top: 2px;
+    padding-left: 12px;
+}
+
+@media ( max-width: 1000px) {
+    .parent {
+        flex-direction: column;
+    }
+    .class {
+        width: 95%;
+        margin: 0px auto;
+        border-color: gray;
+        height: 90px;
+        flex-direction: row;
+        padding: 0px;
+    }
+    .class {
+        margin-top: 0px;
+        padding-left: 12px;
+
+    }
+    .class > img {
+        height: 100%;
+        width: 90px;
+    }
+    .class :hover {
+        box-shadow: 1px 1px 2px black;
+        transform: scale(1.02);
+        transition: 0.5s;
+    }
+}
+@media ( prrfers-color-scheme: dark) {
+    body {
+        background-color: rgb(31, 28, 28 );
+    }
+}
